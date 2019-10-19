@@ -10,12 +10,8 @@ package com.vinod.demo.tests;
 	public class GoogleLoginTest extends BaseClass{
 		
 		@Test(dataProvider="UserCredentials")
-		public void verifyGoogleLoginPage(String email) throws Exception {
-System.out.println("till here");
-getDriver().getCurrentUrl();
-System.out.println(getDriver().getCurrentUrl());
-			
-getDriver().get(loginPage.getURL());
+		public void verifyGoogleLoginPage(String email) throws Exception {			
+			getDriver().get(loginPage.getURL());
 			browserWait();
 			loginPage.getGoogleLogin().click();
 			System.out.println(getDriver().getWindowHandles());
