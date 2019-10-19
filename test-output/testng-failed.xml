@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.vinod.demo.tests.GoogleLoginTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setTestConfiguration"/>
+          <include name="verifyGoogleLoginPage" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.vinod.demo.tests.GoogleLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
